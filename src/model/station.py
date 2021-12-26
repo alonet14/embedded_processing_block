@@ -9,8 +9,8 @@ class Slot:
         
     def status(self):
         return self.battery is not None
-
-
+    
+    
 class Station:
     def __init__(self, location, list_slot: list()):
         self.location = location
@@ -19,6 +19,4 @@ class Station:
     def best_battery(self) -> list:
         return [e for e in self.list_battery if e.capacity >= 95]
 
-    def show_status_slot(self, no_slot: 1):
-         
-        return 0
+    
