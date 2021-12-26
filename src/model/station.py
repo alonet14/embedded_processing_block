@@ -19,4 +19,4 @@ class Station:
         return [e for e in self.list_battery if e.capacity >= 95]
 
     def show_status_slot(self):
-        return self.
+        return self
