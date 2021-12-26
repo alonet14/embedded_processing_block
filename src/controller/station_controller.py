@@ -40,10 +40,7 @@ def calculate_money(old_capacity: float, new_capacity: float):
 
 
 def check_money(user_wallet: int, money_needed_to_pay: int):
-    if user_wallet < money_needed_to_pay:
-        return False
-    else:
-        return True
+    return user_wallet > money_needed_to_pay
 
 
 def get_best_battery(): #return slot
@@ -54,11 +51,13 @@ def get_best_battery(): #return slot
             slot = obj.slot
     return slot
 
+
+
 def push_battery(is_bellow_thresshold: bool, is_enough_money: bool):
-    if is_bellow_thresshold == False:
-        print('tra lai pin cho nguoi dung')
+    if not is_bellow_thresshold:
+        pass
     else:
-        if is_enough_money == False:
+        if not is_enough_money:
             print('tra lai pin cho nguoi dung vi khong du tien')
         else:
-            print('thuc hien doi pin')
+            return get_best_battery()

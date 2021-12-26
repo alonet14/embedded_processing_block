@@ -1,5 +1,6 @@
+
 class Battery():
-    def __init__(self, slot, rfid, capacity):
+    def __init__(self, rfid, capacity):
         self.rfid = rfid
         assert 0 < capacity <= 100
         self.capacity = capacity
