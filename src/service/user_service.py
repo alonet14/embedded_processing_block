@@ -15,8 +15,9 @@ def update_user(id_user, data_user:dict):
 
 
 
+
 if __name__=="__main__":
-    data_user = {"idn": 132456734, "name": "Phuong", "wallet": 100000}
+    data_user = {"idn": 132456734, "name": "Phuong", "wallet": 12000}
     resp = update_user(7, data_user=data_user)
     print(resp)
     
