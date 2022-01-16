@@ -1,15 +1,5 @@
-from random import randrange
-from battery import Battery
-
-class Slot:
-    def __init__(self, no, battery: Battery, is_charge_mode):
-        self.no = no
-        self.battery = battery
-        self.is_charge_mode = is_charge_mode
-        
-    def status(self):
-        return self.battery is not None
-    
+from src.model.battery import Battery
+from src.model.slot import Slot
     
 class Station:
     def __init__(self, location, list_slot: list()):

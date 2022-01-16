@@ -29,6 +29,3 @@ def find_user_by_rfid(rfid):
     return {"status": resp.status_code, "message": rs}
 
 
-if __name__ == "__main__":
-    data = find_user_by_rfid("AAXX5U4K")
-    print(data)

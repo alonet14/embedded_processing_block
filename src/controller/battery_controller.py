@@ -10,6 +10,8 @@ def get_info_slot(fp:str):
     return battery
 
 
+
+
     
 
     
