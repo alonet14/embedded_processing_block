@@ -11,6 +11,3 @@ def find_station(id):
     resp = requests.get(uri, timeout=10)
     rs = json.loads(resp.content.decode('utf-8'))
     return {"status": resp.status_code, "message": rs}
-
-if __name__=="__main__":
-    print(find_station(1))
